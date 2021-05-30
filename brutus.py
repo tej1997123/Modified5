@@ -21,7 +21,7 @@ class pause: # Counts API failures for timeout
 
 def privateKey(): # Generates random 256 bit private key in hex format
     A = "86cbc7ea4a4883706f3b6d91b4b21c9ceab347dfd7032e6bff1dbc5c396e9661"
-    return str(A)
+    return A
 
 def publicKey(privatekey): # Private Key -> Public Key
     privatekey = binascii.unhexlify(privatekey)
