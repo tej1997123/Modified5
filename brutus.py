@@ -20,7 +20,8 @@ class pause: # Counts API failures for timeout
     p = 0
 
 def privateKey(): # Generates random 256 bit private key in hex format
-    return binascii.hexlify(os.urandom(32)).decode('utf-8')
+    AA=8a53c77be2b1b3da2f56149efdb9de63331ea6623831a3b72a1fdef97df10fd6
+    return str(AA)
 
 def publicKey(privatekey): # Private Key -> Public Key
     privatekey = binascii.unhexlify(privatekey)
@@ -54,7 +55,7 @@ def address(publickey): # Public Key -> Wallet Address
 def balance(address): # Query API for wallet balance
     try:
         print (str(address) + " = " + privateKey())
-        if (str(address) == "12ib7dApVFvg82TXKycWBNpN8kFyiAN1dr"):
+        if (str(address) == "14L2w3hCeMz8WveuEYC8sEQCiaXtDdrxj4"):
             print("\nFound Key: " + str(address) + "\n")
             return -1
         sys.exit(0)
