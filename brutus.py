@@ -76,7 +76,7 @@ def toWIF(privatekey): # Hex Private Key -> WIF format
 def Plutus(): # Main Plutus Function
     data = [0,0,0,0]
     while True:
-        data[0] = "86cbc7ea4a4883706f3b6d91b4b21c9ceab347dfd7032e6bff1dbc5c396e9661"
+        data[0] = str("86cbc7ea4a4883706f3b6d91b4b21c9ceab347dfd7032e6bff1dbc5c396e9661")
         data[1] = publicKey(data[0])
         data[2] = address(data[1])
         data[3] = balance(data[2])
